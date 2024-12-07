@@ -1,0 +1,24 @@
+.page{
+    background-image: linear-gradient(blue, white, red);
+    width: 900px;
+    margin: auto;
+    height: 200vh;
+}
+.titre{
+    background-color: red;
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    color: white
+}
+.text{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+a{
+    color: white;
+}
