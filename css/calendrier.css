@@ -1,0 +1,86 @@
+.calendrier {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    width: auto;
+    gap: 15px;
+}
+
+th {
+    text-align: center;
+}
+
+.mois {
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+}
+
+.semaine {
+    display: grid;
+    color: black;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+.semaine div {
+    font-size: 20px;
+}
+.jour {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.jours {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.ferier {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: white;   
+}
+
+.conger {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.conger::after{
+    content: '';
+
+}
+
+.ferier:hover .conger {
+    opacity: 1;
+    visibility: visible;
+}
+
+.vide {
+    visibility: hidden;
+}
+
+.border{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 5%;
+    width: 100%;
+
+}
